@@ -153,7 +153,8 @@ textarea:focus, textarea:focus{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 0.5px solid #F4B400;
+    border:none;
+    /* border: 0.5px solid #F4B400; */
     box-shadow: 0 8px 16px 0px rgba(244,180,0,0.5);
     background-color: white; 
     /* color: #323232; */
