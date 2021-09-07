@@ -1,7 +1,7 @@
 var addNoteBtn=document.getElementById("addNoteButton");
 
 var notes=[];
-var backgroundColors=['#DB4437','#F4B400','#0F9D58','#4285F4']
+var backgroundColors=['#4285F4','#DB4437','#F4B400','#0F9D58']
 
 function displayNotes(){
         
