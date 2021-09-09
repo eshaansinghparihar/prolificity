@@ -12,23 +12,28 @@
     <link rel="mask-icon" href="assets/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="notes.css">
-    <title>Notes</title>
+    <link rel="stylesheet" href="reminder.css">
+    <title>Reminder</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <a href="index.html"><p class="headerText">Prolificity</p></a>
-            <a href="notes.html"><p class="headerTextRight" style="color:#F4B400;">Notes</p></a>
-        </div>
-        <div id="cards" class="cards">
-            <div id="card" class="card">
-                <input id="addTitle" placeholder="Add Title Here" class="cardTitle"/>
-                <textarea id="addBody" placeholder="Add You're Notes Here" class="cardBody"></textarea>
-                <button id="addNoteButton" class="addNote">+</button>
-            </div>
-        </div>
+<div class="header">
+    <a href="index.html"><p class="headerText">Prolificity</p></a>
+    <a href="reminder.html"><p class="headerTextRight" style="color:#4285F4;">Reminder</p></a>
+</div>
+<div class="container">
+<div id="addReminderCards" class="addReminderCards">
+    <div id="card" class="card">
+        <input id="addReminder" placeholder="Add Reminder" class="cardTitle"/>
+        <input id="addLink" placeholder="Add Meeting Link" class="cardBody"/>
+        <input type="datetime-local" id="reminderTime" class="cardBody" />
+        <button id="addReminderButton" class="addReminderButton">+</button>
     </div>
-    <script src="notes.js"></script>  
+</div>
+<div id="cards" class="cards">
+
+</div>
+</div>
+<script src="reminder.js">
+</script>
 </body>
 </html>

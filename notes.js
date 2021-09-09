@@ -56,7 +56,6 @@ function addNote(){
     notes.splice(id,1)
     else
     notes.pop()
-    console.log(notes);
     })
     }
 }
