@@ -88,7 +88,6 @@ function displayCards(){
         }
 
         container.appendChild(card);
-        console.log(container);
     })
     index=0;
     dictionaryResult=[];

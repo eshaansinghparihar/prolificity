@@ -65,8 +65,8 @@ function displayReminders(){
     // else
     // cardBody.innerHTML=" Completed : Not Yet";
 
-    // let buttonGroup=document.createElement("div");
-    // buttonGroup.setAttribute("class", "buttonGroup");
+    let buttonGroup=document.createElement("div");
+    buttonGroup.setAttribute("class", "buttonGroup");
 
 
     let deleteButton=document.createElement("button");
@@ -74,20 +74,28 @@ function displayReminders(){
     deleteButton.setAttribute("style",`color:${color}`);
     deleteButton.setAttribute("id",`${reminder.id}`);
     deleteButton.innerHTML = `<i class="fa fa-trash-o" aria-hidden="true"></i>`;
+    buttonGroup.appendChild(deleteButton);
 
-    // let completedButton=document.createElement("button");
-    // completedButton.setAttribute("class","completedButton");
-    // completedButton.setAttribute("style",`color:${color}`);
-    // completedButton.setAttribute("id",`${reminder.id}`);
-    // completedButton.innerHTML = `<i class="far fa-check-square" aria-hidden="true"></i>`;
+    // if(reminder.meetingLink!=="")
+    // { 
+    // let joinMeetingButton=document.createElement("button");
+    // joinMeetingButton.setAttribute("class","joinMeetingButton");
+    // joinMeetingButton.setAttribute("style",`color:${color}`);
+    // joinMeetingButton.setAttribute("id",`${reminder.id}`);
+    // joinMeetingButton.innerHTML = `<i class="far fa-check-square" aria-hidden="true"></i>`;
 
-    // buttonGroup.appendChild(deleteButton);
-    // buttonGroup.appendChild(completedButton);
+    // buttonGroup.appendChild(joinMeetingButton);
+
+    // joinMeetingButton.addEventListener("click" , function(){
+    //     window.open(`${reminder.meetingLink}`);
+    //     })
+    // }
 
     card.appendChild(title);
     // card.appendChild(cardBody);
-    card.appendChild(deleteButton);
+    card.appendChild(buttonGroup);
 
+    
     let container = document.querySelector("#cards");
     container.appendChild(card);
 
@@ -100,12 +108,7 @@ function displayReminders(){
         reminders.pop();
         })
     
-        // completedButton.addEventListener("click" , function(){
-        // var id=this.id;
-        // console.log(id);
-        // reminders[id].completed=(!reminders[id].completed);
-        // displayReminders();
-        // })
+        
 
 // })
 }
